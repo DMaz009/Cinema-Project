@@ -1,5 +1,32 @@
 <%- include('./partials/header.ejs')%>
 
+<body style='background-image: url(/images/cinema.jpeg);'
+class="img-responsive">
   <h1>Index Page</h1>
+
+  <div class="container hearder">
+    Header<img src="" class="header"alt="Image">
+
+  </div>
+
+  <div class="row container" id="movieList">
+
+    <div class="flex-wrapper">
+
+      <div class="row" id= "film-container" >
+        <% for(let i= 0; i < movies.length; i++) { %>
+        <div class="card film-card" >
+          <a href='/movies/<%=movies[i]._id%>'>
+          <img src="<%=movies[i].img%>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MOVIE title</h5>
+            <p class="card-text">Movie Description.</p>
+            <a href="#" class="btn btn-primary">EDIT</a>
+          </div>
+        </div>
+          <% } %>
+      </div>
+    </div>
+  </div>
 
 <%- include('./partials/footer.ejs')%>

@@ -1,0 +1,28 @@
+<%- include('./partials/header.ejs')%>
+<body>
+  <h1>Index Page</h1>
+
+  <div class="logo">
+    Sci-Fi Cinema
+  </div>
+
+  <div class="carousel">
+    <% for(let i= 0; i < movies.length; i++) { %>
+    <div class="carouselbox">
+      <a href='/movies/<%=movies[i]._id%>'>
+        <video>
+          <source src='<%= movies[i].video %>'
+            type="video/avi">
+        </video>
+      </a>
+        <% } %>
+    </div>
+
+    <a class="switchLeft sliderButton" > < </a>
+    <a class="switchRight sliderButton" > > </a>
+
+  </div>
+
+
+
+<%- include('./partials/footer.ejs')%>
