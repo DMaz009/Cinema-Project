@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "16.13.0"
+  },
+  "description": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DMaz009/Cinema-Project.git"
