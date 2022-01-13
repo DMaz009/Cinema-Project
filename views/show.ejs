@@ -2,17 +2,23 @@
 <body>
   <div style='background-image: url(/images/showpic.jpeg);'
   class="img-responsive" id="showImage">
+  <nav class="nav nav-tabs justify-content-center tops">
+    <a id="createLink" href='/movies'>HOME</a>
+
+  </nav>
 
   <div class="card" id="showCard" >
 
-    <video width="400" height="300" playsinline autoplay muted controls>
-    <source src= "<%=movie.video%>" type="video/webm"
-      class="card-img-top">
-    </video>
+    <iframe width="350" height="250"
+    src="<%=movie.video%>" title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
     <div class="card-body">
-      <h5 class="card-title">MOVIE title</h5>
-      <p class="card-text">Movie Description.</p>
-      <a href="#" class="btn btn-primary">EDIT</a>
+      <h5 class="card-title"><%=movie.name%></h5>
+      <p class="card-text"><%=movie.description%></p>
+      <form action="/movies/<%=movie._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete">
+      </form>
     </div>
   </div>
 

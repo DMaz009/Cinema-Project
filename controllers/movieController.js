@@ -45,8 +45,18 @@ router.post('/', (req, res) => {
   })
 })
 
-// Delete Route............!
-
+// Delete Route............
+router.delete('/:id', (req, res) => {
+  Movie.findByIdAndDelete(req.params.id, (error, deletedMovie) => {
+    if(error) {
+      console.log(error)
+      res.send(error)
+    } else {
+      console.log(deletedMovie)
+      res.redirect('/movies')
+    }
+  })
+})
 
 
 //Edit Route

@@ -37,6 +37,7 @@ body {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   /* position: relative; */
+  text-decoration-line: none !important;
 }
 
 .film-card {
@@ -45,6 +46,7 @@ padding: 0;
 width: 180px;
 background: rgba(255, 255, 255, .2);
 border-radius: 5%;
+text-decoration-line: none !important;
 }
 
 .container {
@@ -150,4 +152,47 @@ form {
   left: 20px;
   bottom: 50px;
   color: white;
+}
+
+#tops {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+#editLink {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+.newHeader {
+  color: white;
+  position: absolute;
+  left: 10px;
+}
+#newLink {
+  color: whitesmoke;
+}
+#indexEditButton {
+  position: sticky;
+  color: white;
+  text-align: center;
+  margin: 50px 0px 0px 50px;
+  bottom: 30px;
+  background-color: rgba(255, 255, 255, .2);
+  border-color: red;
+}
+#descrip {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  text-decoration-line: none !important;
+}
+.card-text {
+  text-decoration: none !important;
 }
