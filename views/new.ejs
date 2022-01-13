@@ -1,5 +1,43 @@
 <%- include('./partials/header.ejs')%>
 <body>
-  <h1>New Page</h1>
+
+  <body>
+
+    <div style='background-image: url(/images/nasa.jpeg);'
+    class="img-responsive" id="editImage">
+
+      <form class="form" action="/movies" method="POST">
+
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">MOVIE TITLE:</label>
+          <input type="text" class="form-control" id="formGroupExampleInput"
+            value="">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">OPENING DATE:</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2"
+            value="">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">MOVIE COVER</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2"
+            value="">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">TRAILER</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2"
+            value="">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">RATING</label>
+          <input type="number" class="form-control" id="formGroupExampleInput2"
+            value="">
+        </div>
+
+        <button type="submit" class="btn btn-primary">CREATE</button>
+
+      </form>
+
+    </div>
 
 <%- include('./partials/footer.ejs')%>

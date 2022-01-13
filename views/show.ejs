@@ -1,5 +1,26 @@
 <%- include('./partials/header.ejs')%>
 <body>
-  <h1>Show Page</h1>
+  <div style='background-image: url(/images/showpic.jpeg);'
+  class="img-responsive" id="showImage">
+
+  <div class="card" id="showCard" >
+
+    <video width="400" height="300" playsinline autoplay muted controls>
+    <source src= "<%=movie.video%>" type="video/webm"
+      class="card-img-top">
+    </video>
+    <div class="card-body">
+      <h5 class="card-title">MOVIE title</h5>
+      <p class="card-text">Movie Description.</p>
+      <a href="#" class="btn btn-primary">EDIT</a>
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+
 
 <%- include('./partials/footer.ejs')%>

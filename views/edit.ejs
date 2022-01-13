@@ -1,6 +1,40 @@
 <%- include('./partials/header.ejs')%>
 <body>
-  
-  <h1>Edit Page</h1>
 
+  <div style='background-image: url(/images/movieCut.jpeg);'
+  class="img-responsive" id="editImage">
+
+    <form class="form" action="/movies/<%=movie.id%>?_method=PUT" method="POST">
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">MOVIE TITLE:</label>
+        <input type="text" class="form-control" id="formGroupExampleInput"
+          value="<%= movie.name%>">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">OPENING DATE:</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2"
+          value="<%= movie.date%>">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">MOVIE COVER</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2"
+          value="<%= movie.img%>">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">TRAILER</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2"
+          value="<%= movie.video%>">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">RATING</label>
+        <input type="number" class="form-control" id="formGroupExampleInput2"
+          value="<%= movie.rating%>">
+      </div>
+
+      <button type="submit" class="btn btn-primary">EDIT</button>
+
+    </form>
+
+  </div>
 <%- include('./partials/footer.ejs')%>

@@ -1,32 +1,34 @@
 <%- include('./partials/header.ejs')%>
 
-<body style='background-image: url(/images/cinema.jpeg);'
-class="img-responsive">
-  <h1>Index Page</h1>
+<body>
 
-  <div class="container hearder">
-    Header<img src="" class="header"alt="Image">
+  <div style='background-image: url(/images/cinema.jpeg);'
+  class="img-responsive" id="indexImage">
+    <h1 class="glow">SCI-FI CINEMA</h1>
 
-  </div>
+    <nav class="nav nav-tabs justify-content-center">
+      <a id="createLink" href='/movies/new'>CREATE A NEW MOVIE</a>
 
-  <div class="row container" id="movieList">
+    </nav>
 
-    <div class="flex-wrapper">
+    <div class="row container" id="movieList">
 
-      <div class="row" id= "film-container" >
-        <% for(let i= 0; i < movies.length; i++) { %>
-        <div class="card film-card" >
-          <a href='/movies/<%=movies[i]._id%>'>
-          <img src="<%=movies[i].img%>" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">MOVIE title</h5>
-            <p class="card-text">Movie Description.</p>
-            <a href="#" class="btn btn-primary">EDIT</a>
+      <div class="flex-wrapper">
+
+        <div class="row" id= "film-container" >
+          <% for(let i= 0; i < movies.length; i++) { %>
+          <div class="card film-card" >
+            <a href='/movies/<%=movies[i]._id%>'>
+            <img src="<%=movies[i].img%>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title neon"><%=movies[i].name%></h5>
+              <p class="card-text"><%=movies[i].description%></p>
+              <a href="/movies/<%=movies[i]._id%>/edit" class="btn btn-primary">EDIT</a>
+            </div>
           </div>
+            <% } %>
         </div>
-          <% } %>
       </div>
     </div>
   </div>
-
 <%- include('./partials/footer.ejs')%>

@@ -17,44 +17,44 @@ mongoose.connect(mongoURI, {
 //   {
 //     name: "Predestination",
 //     date: 09/08/21,
-//     description: "Space Movie",
+//     description: "Movie",
 //     img: 'https://i.imgur.com/yygAJeW.jpeg',
-//     video: "https://www.themoviedb.org/video/play?key=E0EtHm79YFE"
+//     video: "https://youtu.be/xxG-YfedrfU"
 //   },
 //   {
 //     name: "Dune",
 //     date: 09/08/21,
-//     description: "Space Movie",
+//     description: "The Spice",
 //     img: 'https://i.imgur.com/b11FurS.jpeg',
-//     video: ""
+//     video: "https://youtu.be/EvSEXM7a16g"
 //   },
 //   {
 //     name: "Tenet",
 //     date: 09/08/21,
-//     description: "Movie",
+//     description: "Movie within a movie",
 //     img: 'https://i.imgur.com/Ub5E6aI.jpeg',
-//     video: ""
+//     video: "https://www.youtube.com/watch?v=L3pk_TBkihU"
 //   },
 //   {
 //     name: "Blade Runner",
 //     date: 09/08/21,
-//     description: "Space Movie",
+//     description: "Psychological",
 //     img: 'https://i.imgur.com/df4Okvm.jpeg',
-//     video: ""
+//     video: "https://youtu.be/gCcx85zbxz4"
 //   },
 //   {
 //     name: "Arrival",
 //     date: 09/08/21,
-//     description: "Space Movie",
+//     description: "Alien language",
 //     img: 'https://i.imgur.com/6mNU51d.jpeg',
-//     video: ""
+//     video: "https://youtu.be/tFMo3UJ4B4g"
 //   },
 //   {
 //     name: "Interstellar",
 //     date: 09/18/21,
-//     description: "Stuff",
+//     description: "Mind-Bender",
 //     img: 'https://i.imgur.com/CAb3KWc.jpeg',
-//     video: ""
+//     video: "https://youtu.be/zSWdZVtXT7E"
 //   }
 // ], (error, data)=> {
 //   console.log(data)
