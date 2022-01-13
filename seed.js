@@ -1,6 +1,8 @@
 const Movie = require('./models/movies')
 const mongoose =require('mongoose')
 
+
+
 const mongoURI = 'mongodb://127.0.0.1:27017/cinema'
 const db = mongoose.connection
 

@@ -10,7 +10,6 @@
   "engines": {
     "node": "16.13.0"
   },
-  "description": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DMaz009/Cinema-Project.git"
@@ -29,6 +28,8 @@
     "express": "^4.17.2",
     "express-session": "^1.17.2",
     "method-override": "^3.0.0",
-    "mongoose": "^6.1.6"
+    "mongoose": "^6.1.6",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.4.1"
   }
 }

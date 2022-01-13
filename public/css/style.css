@@ -76,7 +76,7 @@ text-decoration-line: none !important;
 }
 
 #showImage {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 4;
@@ -118,17 +118,17 @@ text-decoration-line: none !important;
 #showCard {
   position: absolute;
   display: flex;
-  margin: 0 10px;
+  margin: 0;
   padding: 0;
-  width: 200px;
-  max-height: 500px;
-  background: rgba(255, 255, 255, .2);
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, .6);
   border-radius: 5%;
-  top: 15vh;
-  left: 30vw;
+  top: 10vh;
+  left: 4vw;
 }
 
-.neon {
+.neon, #createLink, #editLink, #tops {
   font-size: 20px;
   color: #fff;
   text-align: center;
@@ -154,20 +154,12 @@ form {
   color: white;
 }
 
-#tops {
+#tops, #editLink, #createLink {
   display: flex;
   position: absolute;
   right: 30px;
   color: white;
-  font-size: 20px;
-}
-
-#editLink {
-  display: flex;
-  position: absolute;
-  right: 30px;
-  color: white;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .newHeader {
@@ -195,4 +187,23 @@ form {
 }
 .card-text {
   text-decoration: none !important;
+}
+
+iframe {
+  border-radius: 10%;
+  width: 500px !important;
+  height: 300px !important;
+  padding: 10px;
+}
+.comments {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  height: 90%;
+  width: 30%;
+  color: black;
+  z-index: 4;
+  background:rgba(255, 255, 255, .7);
+  border-radius: 5%;
+  text-decoration: underline;
 }
