@@ -92,8 +92,6 @@ const movieController = require('./controllers/movieController')
 
 app.use('/movies', movieController)
 
-// const userController = require('./controllers/userController')
-// app.use('/users', userController)
 
 app.get('/', (req, res) => {
   res.render('./users/register.ejs')
@@ -106,8 +104,8 @@ app.use('/users', userController)
 
 
 
-server.listen(3000, () => {
-  console.log('listening on port:3000');
+server.listen(PORT, () => {
+  console.log(`listening on port:${PORT}`);
 });
 
 // app.listen(PORT, () => {
