@@ -55,7 +55,7 @@ router.post('/', (req, res) => {
 })
 
 // Delete Route............
-router.delete('/:id', authRequired, (req, res) => {
+router.delete('/:id', (req, res) => {
   Movie.findByIdAndDelete(req.params.id, (error, deletedMovie) => {
     if(error) {
       console.log(error)
