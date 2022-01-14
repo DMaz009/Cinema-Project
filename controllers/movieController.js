@@ -5,7 +5,16 @@ const router = express.Router()
 // Import Model...............
 const Movie = require('../models/movies')
 
-
+const authRequired = (req, res, next) => {
+  if(req.session.currentUser) {
+    //if user is signed in
+    next()
+    //next is part of express
+  } else {
+    //if there is no user logged in
+    res.redirect('/users/signin')
+  }
+}
 
 
 // Index Route....................
@@ -46,7 +55,7 @@ router.post('/', (req, res) => {
 })
 
 // Delete Route............
-router.delete('/:id', (req, res) => {
+router.delete('/:id', authRequired, (req, res) => {
   Movie.findByIdAndDelete(req.params.id, (error, deletedMovie) => {
     if(error) {
       console.log(error)

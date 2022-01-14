@@ -7,7 +7,7 @@
     <h1 class="glow">SCI-FI CINEMA</h1>
 
     <nav class="nav nav-tabs justify-content-center">
-      <a id="newLink" href='/movies/new'>+ADD A NEW MOVIE</a>
+      <a id="newLink" href='/movies/new'>+ADD A NEW MOVIE</a> 
 
     </nav>
 
@@ -22,7 +22,8 @@
             <img src="<%=movies[i].img%>" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title neon" ><%=movies[i].name%></h5>
-              <p class="card-text" id="descrip" ><%=movies[i].description%></p>
+              <p class="card-text" style="text-decoration-line: none !important;"
+                id="descrip" ><%=movies[i].description%></p>
               <a href="/movies/<%=movies[i]._id%>/edit" class="btn btn-primary"
                 id="indexEditButton">EDIT</a>
             </div>
