@@ -16,9 +16,13 @@ An application that shows current & upcoming Sci-Fi movies. Providing the user w
 
 ## User Stories
 As a user I want to view a listing of current sci-fi movies.
+
 As a user I need to click on the movie and go to the show page.
+
 As a user I want to be able to edit movies.
+
 As a user I want to delete older movies.
+
 As a user I want to be able to go back to the previous page easily.
 
 ## MVP Goals
