@@ -14,6 +14,23 @@ An application that shows current & upcoming Sci-Fi movies. Providing the user w
 
 ![This is an image](https://media.git.generalassemb.ly/user/40487/files/662c1280-722a-11ec-8f98-2f89d6568da8)
 
+## Tech Used
+-JavaScript
+
+-CSS3 and Bootstrap
+
+-MongoDB and Mongoose
+
+-Express
+
+-Bcrypt
+
+-Heroku
+
+-Socket.io
+
+-EJS
+
 ## User Stories
 As a user I want to view a listing of current sci-fi movies.
 
