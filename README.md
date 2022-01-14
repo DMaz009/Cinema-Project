@@ -8,7 +8,7 @@ https://scificinema.herokuapp.com/movies
 An application that shows current & upcoming Sci-Fi movies. Providing the user with the ability to watch a trailer then rate and review.
 
 ## Wireframes with basic page layouts
-https://media.git.generalassemb.ly/user/40487/files/41379f80-722a-11ec-8dc8-35ee321e030b
+![This is an image](https://media.git.generalassemb.ly/user/40487/files/41379f80-722a-11ec-8dc8-35ee321e030b)
 
 https://media.git.generalassemb.ly/user/40487/files/18afa580-722a-11ec-87db-bae5b3164ca0
 
