@@ -10,11 +10,9 @@ An application that shows current & upcoming Sci-Fi movies. Providing the user w
 ## Wireframes with basic page layouts
 ![This is an image](https://media.git.generalassemb.ly/user/40487/files/41379f80-722a-11ec-8dc8-35ee321e030b)
 
-https://media.git.generalassemb.ly/user/40487/files/18afa580-722a-11ec-87db-bae5b3164ca0
+![This is an image](https://media.git.generalassemb.ly/user/40487/files/61fff500-722a-11ec-9601-c41df177d79f)
 
-https://media.git.generalassemb.ly/user/40487/files/61fff500-722a-11ec-9601-c41df177d79f
-
-https://media.git.generalassemb.ly/user/40487/files/662c1280-722a-11ec-8f98-2f89d6568da8
+![This is an image](https://media.git.generalassemb.ly/user/40487/files/662c1280-722a-11ec-8f98-2f89d6568da8)
 
 ## User Stories
 As a user I want to view a listing of current sci-fi movies.
