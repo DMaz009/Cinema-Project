@@ -10,7 +10,7 @@ const movieSchema = new Schema({
   img: String,
   video: String,
   movieOrSeries: { type: Boolean, required: false},
-  rating: { type: Number, min: 0, max: 5},
+  rating: { type: Number, min: 0, max: 10},
   favs: { type: Number, min: 0},
   dislikes: { type: Number, min: 0},
   tags: [String],

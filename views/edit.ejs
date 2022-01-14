@@ -13,31 +13,31 @@
 
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">MOVIE TITLE:</label>
-        <input type="text" class="form-control" id="formGroupExampleInput"
+        <input type="text" name="name" class="form-control" id="formGroupExampleInput"
           value="<%= movie.name%>">
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">OPENING DATE:</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2"
+        <input type="text" name="date" class="form-control" id="formGroupExampleInput2"
           value="<%= movie.date%>">
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">MOVIE COVER</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2"
+        <input type="text" name="image" class="form-control" id="formGroupExampleInput2"
           value="<%= movie.img%>">
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">TRAILER</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2"
+        <input type="text" name="video" class="form-control" id="formGroupExampleInput2"
           value="<%= movie.video%>">
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">RATING</label>
-        <input type="number" class="form-control" id="formGroupExampleInput2"
+        <input type="number" name="rating" class="form-control" id="formGroupExampleInput2"
           value="<%= movie.rating%>">
       </div>
 
-      <button type="submit" class="btn btn-primary">EDIT</button>
+      <button type="submit" value="Edit Movie" class="btn btn-primary">EDIT</button>
 
     </form>
 
